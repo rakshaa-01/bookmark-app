@@ -1,0 +1,147 @@
+body {
+    font-family: 'Myriad pro Semibold';
+    background: linear-gradient(to bottom, #070707, #364257); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input field and button styling */
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#bookmark-input, #bookmark-category {
+    font-family: 'Myriad pro Semibold';
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #8f4a7a;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+#add-bookmark-btn {
+    font-family: 'Myriad pro Semibold';
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#add-bookmark-btn:hover {
+    background-color: #45a049;
+}
+
+/* Bookmark list styling */
+#bookmark-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bookmark-item {
+    background-color: #14ecda;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* DELETE button styling (Fixed color issue) */
+.bookmark-item button.delete-btn {
+    font-family: 'Myriad pro Semibold';
+    background-color: #992525; /* Red background */
+    color: white;
+}
+
+.bookmark-item button.delete-btn:hover {
+    background-color: #ff0905; /* Darker red on hover */
+}
+
+.bookmark-item button.update-btn {
+    font-family: 'Myriad pro Semibold';
+    background-color: #909220;
+    color: white;
+}
+
+.bookmark-item button.update-btn:hover {
+    background-color: #cbce2d;
+}
+
+.bookmark-item span {
+    font-size: 16px;
+    color: #333;
+    flex-grow: 1;
+    word-wrap: break-word;
+}
+
+/* Styling for buttons (UPDATE & DELETE) */
+.bookmark-item button {
+    padding: 6px 12px;
+    margin-left: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Category Styling */
+.bookmark-item .span-category {
+    font-size: 16px;
+    color: #555;
+    margin-left: 5px;
+    font-style: italic;
+}
+
+/* Update Input Fields */
+.update-input, .update-category {
+    font-family: 'Myriad pro Semibold';
+    padding: 6px 10px;
+    font-size: 14px;
+    width: 70%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.save-btn {
+    font-family: 'Myriad pro Semibold';
+    padding: 6px 12px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
