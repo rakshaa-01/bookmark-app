@@ -1,4 +1,4 @@
-# Search functioanlity implemented
+# Search functionality implemented
 
 > __Initial bookmarks__
 <p align="center">
