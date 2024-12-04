@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+    font-family: 'Myriad pro Semibold';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #070707, #364257); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff; /* Default font color */
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    color: #333333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Form and Input Styles */
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#query {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#search-btn,
+#reset,
+#add-bookmark-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-btn {
+    background-color: #06216e;
+    color: white;
+}
+
+#search-btn:hover {
+    background-color: #011753;
+}
+
+#reset {
+    background-color: #363b3f;
+    color: white;
+}
+
+#reset:hover {
+    background-color: #2c3033;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#bookmark-input,
+#bookmark-category {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Add Button */
+#add-bookmark-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+#add-bookmark-btn:hover {
+    background-color: #45a049;
+}
+
+/* Bookmark List */
+#bookmark-list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.bookmark-item {
+    background-color: #000000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fdfafa;
+}
+
+.bookmark-item span {
+    font-size: 14px;
+    flex-grow: 1;
+    word-wrap: break-word;
+}
+
+/* Button Styling in List */
+.bookmark-item button {
+    font-size: 12px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.bookmark-item .delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.bookmark-item .delete-btn:hover {
+    background-color: #c82333;
+}
+
+.bookmark-item .update-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.bookmark-item .update-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Update Input Fields */
+.update-input,
+.update-category {
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(50% - 10px); /* Ensure responsive spacing */
+    margin-right: 5px;
+}
+
+.save-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .bookmark-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #form {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
